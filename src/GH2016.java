@@ -31,7 +31,39 @@ public class GH2016 {
 			int num = Integer.parseInt(sCurrentLine);
 			this.products = new int[num];
 			sCurrentLine = reader.readLine();
-			String[] splitter = sCurrentLine.split(sCurrentLine);
+			splitter = new String [sCurrentLine.split(" ").length];
+			splitter = sCurrentLine.split(" ");
+			for(int i = 0;i<splitter.length;i++){
+				this.products[i] = Integer.parseInt(splitter[i]);
+			}
+			sCurrentLine = reader.readLine();
+			num = Integer.parseInt(sCurrentLine);
+			this.warehouse = new int[num];
+			for(int i = 0;i<this.warehouse.length;i++){
+				sCurrentLine = reader.readLine();
+				splitter = new String [sCurrentLine.split(" ").length];
+				splitter = sCurrentLine.split(" ");
+				//Añadir coordenadas al primer almacen
+				sCurrentLine = reader.readLine();
+				splitter = new String [sCurrentLine.split(" ").length];
+				splitter = sCurrentLine.split(" ");
+				//Almacenado de objetos
+
+			}
+			sCurrentLine = reader.readLine();
+			num = Integer.parseInt(sCurrentLine);
+			this.orders = new int[num];
+			for(int i = 0;i<this.orders.length;i++){
+				sCurrentLine = reader.readLine();
+				splitter = new String [sCurrentLine.split(" ").length];
+				splitter = sCurrentLine.split(" ");
+				//Destino del envio
+				sCurrentLine = reader.readLine();
+				num = Integer.parseInt(sCurrentLine);
+				//Crear array de items contenidos en el envio
+				//Bucle para meter cositas ricas con sus lecturas y tal
+
+			}
 
 
 		} catch (IOException e) {
