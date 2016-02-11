@@ -9,7 +9,7 @@ public class GH2016 {
 	private int max_payload;
 	private int products[];
 	private int products_weigth[];
-	private int warehouse[];
+	private Warehouse warehouse[];
 	private int warehouse_loc[][];
 	private int orders[];
 
@@ -38,12 +38,12 @@ public class GH2016 {
 			}
 			sCurrentLine = reader.readLine();
 			num = Integer.parseInt(sCurrentLine);
-			this.warehouse = new int[num];
+			this.warehouse = new Warehouse[num];
 			for(int i = 0;i<this.warehouse.length;i++){
 				sCurrentLine = reader.readLine();
 				splitter = new String [sCurrentLine.split(" ").length];
 				splitter = sCurrentLine.split(" ");
-				//Añadir coordenadas al primer almacen
+				this.warehouse[i].setLocation(Integer.parseInt(splitter[0]), Integer.parseInt(splitter[1]));
 				sCurrentLine = reader.readLine();
 				splitter = new String [sCurrentLine.split(" ").length];
 				splitter = sCurrentLine.split(" ");
