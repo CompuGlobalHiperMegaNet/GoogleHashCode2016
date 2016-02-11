@@ -40,7 +40,15 @@ public class GH2016 {
 			num = Integer.parseInt(sCurrentLine);
 			this.warehouse = new int[num];
 			for(int i = 0;i<warehouse.length;i++){
-
+				sCurrentLine = reader.readLine();
+				splitter = new String [sCurrentLine.split(" ").length];
+				splitter = sCurrentLine.split(" ");
+				//Añadir coordenadas al primer almacen
+				sCurrentLine = reader.readLine();
+				splitter = new String [sCurrentLine.split(" ").length];
+				splitter = sCurrentLine.split(" ");
+				//Almacenado de objetos
+				
 			}
 
 		} catch (IOException e) {
