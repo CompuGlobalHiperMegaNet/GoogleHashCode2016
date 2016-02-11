@@ -33,7 +33,15 @@ public class GH2016 {
 			sCurrentLine = reader.readLine();
 			splitter = new String [sCurrentLine.split(" ").length];
 			splitter = sCurrentLine.split(" ");
+			for(int i = 0;i<splitter.length;i++){
+				this.products[i] = Integer.parseInt(splitter[i]);
+			}
+			sCurrentLine = reader.readLine();
+			num = Integer.parseInt(sCurrentLine);
+			this.warehouse = new int[num];
+			for(int i = 0;i<warehouse.length;i++){
 
+			}
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
