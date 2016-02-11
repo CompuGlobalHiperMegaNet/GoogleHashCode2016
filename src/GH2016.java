@@ -48,6 +48,11 @@ public class GH2016 {
 				splitter = new String [sCurrentLine.split(" ").length];
 				splitter = sCurrentLine.split(" ");
 				//Almacenado de objetos
+				int [] aux = new int[splitter.length];
+				for(int j = 0;i<splitter.length;j++){
+					aux[j] = Integer.parseInt(splitter[j]);
+					this.warehouse[i].setProducts(j, aux[j]);
+				}
 
 			}
 			sCurrentLine = reader.readLine();
