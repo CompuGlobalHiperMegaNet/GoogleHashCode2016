@@ -37,7 +37,7 @@ public class Drone {
 							this.getLocation())<nearestWh)
 		nearestWh = this.current_location.euclideanDistance(warehouse.getLocation(),
 								    this.getLocation());
-		
 	}
+	
     }
 }
