@@ -31,7 +31,8 @@ public class GH2016 {
 			int num = Integer.parseInt(sCurrentLine);
 			this.products = new int[num];
 			sCurrentLine = reader.readLine();
-			String[] splitter = sCurrentLine.split(sCurrentLine);
+			splitter = new String [sCurrentLine.split(" ").length];
+			splitter = sCurrentLine.split(" ");
 
 
 		} catch (IOException e) {
