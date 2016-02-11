@@ -30,7 +30,14 @@ public class Drone {
 	return (current_location.equals(near_warehouse));
     }
     
-    private void goToNearWareHouse (){
-	//TODO
+    private void goToNearWareHouse(Warehouse[] warehouses){
+	int nearestWh = 10000;
+	for (int i = 0; i<warehouses.length; i++) {
+	    if (this.current_location.euclideanDistance(warehouse.getLocation(),
+							this.getLocation())<nearestWh)
+		nearestWh = this.current_location.euclideanDistance(warehouse.getLocation(),
+								    this.getLocation());
+		
+	}
     }
 }

@@ -16,6 +16,13 @@ public class Location {
 		return this.y;
 	}
 
+	public void setX(int num){
+		this.x = num;
+	}
+	public void setY(int num){
+		this.y = num;
+	}
+
 	public boolean equals(Location loc2){
 		return (this.x == loc2.getX() && this.y == loc2.getY());
 	}
